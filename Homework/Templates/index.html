@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <h2><strong>Latest Mars News:</strong></h2>
+    <h3><strong>{{mars_NASA.news_title}}</strong></h3>
+    <h4>{{mars_NASA.news_p}}</h4>
+  </div>
+  
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-8'>
+        <h3 class="text-center"><strong>Mar's Hemispheres</strong></h3>
+        <hr>
+        <div class="card">
+          <div class="card-body">
+            <div class='row'>
+              <div class='col-md-6'>
+                <h5 class="card- text-center">{{mars_NASA.hemisphere_title_one}}</h5>
+                <img src="{{mars_NASA.hemisphere_image_one}}" class="rounded float-start" style="width: 100%;" alt="...">
+              </div>
+              <div class='col-md-6'>
+                <h5 class="card- text-center">{{mars_NASA.hemisphere_title_two}}</h5>
+                <img src="{{mars_NASA.hemisphere_image_two}}" class="rounded float-end" style="width: 100%;" alt="...">
+              </div>
+            </div>
+            <div class='row'>
+              <div class='col-md-6'>
+                <h5 class="card- text-center">{{mars_NASA.hemisphere_title_three}}</h5>
+                <img src="{{mars_NASA.hemisphere_image_three}}" class="rounded float-start" style="width: 100%;" alt="...">
+              </div>
+              <div class='col-md-6'>
+                <h5 class="card- text-center">{{mars_NASA.hemisphere_title_four}}</h5>
+                <img src="{{mars_NASA.hemisphere_image_four}}" class="rounded float-end" style="width: 100%;" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class='col-md-4'>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr style="text-align: right;">
+              <th></th>
+              <th></th>
+              <th>Mars</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>0</th>
+              <td>Equatorial Diameter:</td>
+              <td>6,792 km</td>
+            </tr>
+            <tr>
+              <th>1</th>
+              <td>Polar Diameter:</td>
+              <td>6,752 km</td>
+            </tr>
+            <tr>
+              <th>2</th>
+              <td>Mass:</td>
+              <td>6.39 × 10^23 kg (0.11 Earths)</td>
+            </tr>
+            <tr>
+              <th>3</th>
+              <td>Moons:</td>
+              <td>2 (Phobos &amp; Deimos)</td>
+            </tr>
+            <tr>
+              <th>4</th>
+              <td>Orbit Distance:</td>
+              <td>227,943,824 km (1.38 AU)</td>
+            </tr>
+            <tr>
+              <th>5</th>
+              <td>Orbit Period:</td>
+              <td>687 days (1.9 years)</td>
+            </tr>
+            <tr>
+              <th>6</th>
+              <td>Surface Temperature:</td>
+              <td>-87 to -5 °C</td>
+            </tr>
+            <tr>
+              <th>7</th>
+              <td>First Record:</td>
+              <td>2nd millennium BC</td>
+            </tr>
+            <tr>
+              <th>8</th>
+              <td>Recorded By:</td>
+              <td>Egyptian astronomers</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
